@@ -1,0 +1,15 @@
+body {
+     margin 0;
+     font-family 
+     background: linear-gradient(
+     to bottom,
+     #cfe8f3 0%,
+    #a8d0e6 40%,
+    #4da6c8 70%,
+    #2c7da0 100%   
+     );
+     display flex; 
+     justiy-content: center;
+     align-items: center;
+     height: 100vh;
+}
