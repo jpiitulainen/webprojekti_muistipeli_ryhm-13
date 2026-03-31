@@ -1,20 +1,73 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Järvikalat muistipeli</title>
-  <link rel="stylesheet" href="css/tyylit.css" />
+
+  <style>
+    body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+      background: linear-gradient(
+        to bottom,
+        #cfe8f3 0%,
+        #a8d0e6 40%,
+        #4da6c8 70%,
+        #2c7da0 100%
+      );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .menu {
+      margin-bottom: 20px;
+    }
+
+    .start-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #1e88a8;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 18px;
+    }
+
+    .start-button:hover {
+      background-color: #156f86;
+    }
+  </style>
+
 </head>
 <body>
+
 <main class="container">
-<h1>Järvikalat muistipeli</h1>
-<p class="subtitle">Löydä kaikki kalaparit!</p>
+  <h1>Järvikalat muistipeli</h1>
+  <p class="subtitle">Löydä kaikki kalaparit!</p>
 
-<a href="muistipeli.html" class="start-button">
-Aloita peli
-</a>
-
+  <a href="muistipeli.html" class="start-button">
+    Aloita peli
+  </a>
 </main>
 
 </body>

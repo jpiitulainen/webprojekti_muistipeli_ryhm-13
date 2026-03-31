@@ -13,3 +13,36 @@ body {
      align-items: center;
      height: 100vh;
 }
+
+.container {
+text-align: center; 
+padding 20px;     
+}
+
+h1 {
+     font-size 2rem;
+     magin bottom 10px;
+}
+
+.subtitle {
+     font-size: 1.1 rem;
+     margin-bottom: 20px;
+     color #333;
+}
+
+.menu {
+     margin-bottom 20px;
+}
+
+.start-button {
+     display: inline-block;
+     padding: 12px 24px;
+     background-color: #1e88a8;
+     color: white; text-decoration: none;
+     border-radius: 8px;
+     font-size 18px;
+}
+
+.start-button:hover {
+     background-color #156f86;
+}
