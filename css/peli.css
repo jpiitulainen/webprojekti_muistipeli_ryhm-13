@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #eef5f7;
+  background: linear-gradient(to bottom, #cfe9f3, #eaf6fb, #f7fbfc);
   display: flex;
   justify-content: center;
   margin-top: 40px;
@@ -8,6 +8,10 @@ body {
 
 .game-container {
   text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .grid {
