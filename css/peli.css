@@ -1,0 +1,35 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to bottom, #cfe9f3, #eaf6fb, #f7fbfc);
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.game-container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  max-width: 500px; 
+  margin: 20px auto;
+}
+
+.card {
+  aspect-ratio: 1 / 1;
+  background-color: #2d6cdf; 
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
