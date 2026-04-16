@@ -46,7 +46,7 @@ deck.forEach(card => {
     </div>
   `;
 
-  game.appendChild(el); // tämä puuttui
+  game.appendChild(el);
 });
 
 console.log(deck);
