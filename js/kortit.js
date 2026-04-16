@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+const game = document.getElementById("game");
+
 const fish = [
   { name: "siika", image: "images/siika.webp" },
   { name: "pasuri", image: "images/Pasuri.png" },
@@ -41,6 +45,10 @@ deck.forEach(card => {
       </div>
     </div>
   `;
+
+  game.appendChild(el); // tämä puuttui
 });
 
 console.log(deck);
+
+});
