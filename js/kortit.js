@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 const game = document.getElementById("game");
+const nameBox = document.getElementById("fish-name");
 
 const fish = [
   { name: "siika", image: "images/siika.webp" },
@@ -10,14 +11,14 @@ const fish = [
   { name: "sorva", image: "images/Sorva.png" },
   { name: "kiiski", image: "images/Kiiski.jpg" },
   { name: "salakka", image: "images/Salakka.png" },
-  { name: "sayne", image: "images/Sayne.png" },
+  { name: "säyne", image: "images/Sayne.png" },
   { name: "made", image: "images/Made.png" },
   { name: "taimen", image: "images/Taimen.jpg" },
-  { name: "nieria", image: "images/Nieriä.jpg" },
+  { name: "nieriä", image: "images/Nieriä.jpg" },
   { name: "harjus", image: "images/Harjus.jpg" },
   { name: "ankerias", image: "images/Ankerias.jpg" },
   { name: "turska", image: "images/Turska.jpg" },
-  { name: "sarki", image: "images/Särki.png" },
+  { name: "särki", image: "images/Särki.png" },
   { name: "kirjolohi", image: "images/Kirjolohi.jpg" },
   { name: "muikku", image: "images/Muikku.jpg" },
   { name: "ahven", image: "images/Ahven.png" }
@@ -31,9 +32,14 @@ let deck = [...fish, ...fish].map((card, index) => ({
   matched: false
 }));
 
+let firstCard = null;
+let secondCard = null;
+let lockBoard = false;
+
 deck.forEach(card => {
   const el = document.createElement("div");
   el.classList.add("card");
+  el.dataset.name = card.name;
 
   el.innerHTML = `
     <div class="inner">
@@ -46,9 +52,41 @@ deck.forEach(card => {
     </div>
   `;
 
+  el.addEventListener("click", () => {
+    if (lockBoard) return;
+    if (el.classList.contains("flipped")) return;
+
+    el.classList.add("flipped");
+
+    nameBox.textContent = card.name;
+
+    if (!firstCard) {
+      firstCard = el;
+      return;
+    }
+
+    secondCard = el;
+    lockBoard = true;
+
+    if (firstCard.dataset.name === secondCard.dataset.name) {
+      firstCard = null;
+      secondCard = null;
+      lockBoard = false;
+    } else {
+      setTimeout(() => {
+        firstCard.classList.remove("flipped");
+        secondCard.classList.remove("flipped");
+
+        nameBox.textContent = "";
+
+        firstCard = null;
+        secondCard = null;
+        lockBoard = false;
+      }, 800);
+    }
+  });
+
   game.appendChild(el);
 });
-
-console.log(deck);
 
 });
