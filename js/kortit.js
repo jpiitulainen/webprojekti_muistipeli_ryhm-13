@@ -35,6 +35,8 @@ let deck = [...fish, ...fish].map((card, index) => ({
 let firstCard = null;
 let secondCard = null;
 let lockBoard = false;
+let matchedPairs = 0;
+const totalPairs = fish.length;
 
 deck.forEach(card => {
   const el = document.createElement("div");
@@ -69,6 +71,12 @@ deck.forEach(card => {
     lockBoard = true;
 
     if (firstCard.dataset.name === secondCard.dataset.name) {
+      matchedPairs++;
+
+      if (matchedPairs === totalPairs) {
+        showWinScreen();
+      }
+
       firstCard = null;
       secondCard = null;
       lockBoard = false;
