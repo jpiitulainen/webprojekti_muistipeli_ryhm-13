@@ -1,13 +1,15 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-
   background: url("../images/maisema.jpg") no-repeat center;
   background-size: contain;
   background-color: #2c7da0;
-
+  display: flex;
   min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .game-container {
   max-width: 700px;
@@ -38,9 +40,7 @@ body {
 
 .game-board {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  max-width: 600px;
-  width: 100%;
+  grid-template-columns: repeat(6, 90px);
   gap: 10px;
   justify-content: center;
   align-content: start;
