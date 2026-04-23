@@ -27,9 +27,7 @@ const fish = [
 let deck = [...fish, ...fish].map((card, index) => ({
   ...card,
   backImage: "images/kortti.png",
-  id: index,
-  flipped: false,
-  matched: false
+  id: index
 }));
 
 deck.sort(() => Math.random() - 0.5);
@@ -59,9 +57,9 @@ deck.forEach(card => {
   el.addEventListener("click", () => {
     if (lockBoard) return;
     if (el.classList.contains("flipped")) return;
+    if (el.classList.contains("matched")) return;
 
     el.classList.add("flipped");
-
     nameBox.textContent = card.name;
 
     if (!firstCard) {
@@ -70,10 +68,17 @@ deck.forEach(card => {
     }
 
     secondCard = el;
+    updateMoves();
     lockBoard = true;
 
-    if (firstCard.dataset.name === secondCard.dataset.name) {
+    if (
+      firstCard.dataset.name === secondCard.dataset.name &&
+      firstCard !== secondCard
+    ) {
       matchedPairs++;
+
+      firstCard.classList.add("matched");
+      secondCard.classList.add("matched");
 
       if (matchedPairs === totalPairs) {
         showWinScreen();
@@ -82,6 +87,7 @@ deck.forEach(card => {
       firstCard = null;
       secondCard = null;
       lockBoard = false;
+
     } else {
       setTimeout(() => {
         firstCard.classList.remove("flipped");
