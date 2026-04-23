@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muistipeli</title>
+
+  <link rel="stylesheet" href="css/peli.css">
+</head>
+
+<body>
+
+  <div class="game-container">
+
+    <header class="header">
+      <h1>Muistipeli</h1>
+      <button onclick="location.reload()">Uusi Peli</button>
+    </header>
+
+    <div class="game-info">
+     <span>Siirrot: <span id="moves">0</span></span>
+<span>Aika: <span id="timer">0s</span></span>
+      <div id="fish-name"></div>
+    </div>
+
+    <main id="game" class="game-board"></main>
+
+  </div>
+
+  <div id="win-screen" class="hidden">
+  <h2> Voitit pelin!</h2>
+  <button onclick="location.reload()">Pelaa uudestaan</button>
+</div>
+
+<script src="js/extrat.js"></script>
+<script src="js/muistipeli.js"></script>
+<script src="js/kortit.js"></script>
+
+</body>
+</html>
