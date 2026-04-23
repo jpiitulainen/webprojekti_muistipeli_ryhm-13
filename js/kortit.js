@@ -32,6 +32,8 @@ let deck = [...fish, ...fish].map((card, index) => ({
   matched: false
 }));
 
+deck.sort(() => Math.random() - 0.5);
+
 let firstCard = null;
 let secondCard = null;
 let lockBoard = false;
