@@ -10,25 +10,33 @@
 
 <body>
 
-  <div class="game-container">
+<header class="header">
+  <h1>Järvikalat muistipeli</h1>
+  <nav>
+    <a href="index.html">Etusivu</a>
+    <a href="muistipeli.html">Peli</a>
+    <a href="info.html">Info</a>
+  </nav>
+</header>
 
-    <header class="header">
-      <h1>Muistipeli</h1>
-      <button onclick="location.reload()">Uusi Peli</button>
-    </header>
+<div class="game-container">
 
-    <div class="game-info">
-     <span>Siirrot: <span id="moves">0</span></span>
-<span>Aika: <span id="timer">0s</span></span>
-      <div id="fish-name"></div>
-    </div>
+  <button onclick="location.reload()">Uusi Peli</button>
 
-    <main id="game" class="game-board"></main>
-
+  <div class="game-info">
+    <span>Siirrot: <span id="moves">0</span></span>
+    <span>Aika: <span id="timer">0s</span></span>
+    <div id="fish-name"></div>
   </div>
 
-  <div id="win-screen" class="hidden">
-  <h2> Voitit pelin!</h2>
+  <main id="game" class="game-board"></main>
+
+</div>
+
+<div id="win-screen" class="hidden">
+  <p>Aika: <span id="final-time"></span></p>
+  <p>Siirrot: <span id="final-moves"></span></p>
+  <p>Pisteet: <span id="final-score"></span></p>
   <button onclick="location.reload()">Pelaa uudestaan</button>
 </div>
 
