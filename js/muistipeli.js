@@ -14,3 +14,17 @@ function showWinScreen() {
 function resetGameUI() {
   document.getElementById("fish-name").textContent = "";
 }
+
+/*
+Lähteet:
+W3Schools - JavaScript Functions
+https://www.w3schools.com/js/js_functions.asp
+
+W3Schools - JavaScript HTML DOM Document
+https://www.w3schools.com/js/js_htmldom_document.asp
+
+JavaScript.info - Functions
+https://javascript.info/function-basics
+
+OpenAI - ChatGPT (GPT-5) Tekoälyä käytetty koodin korjaamiseen ja selittämiseen.
+*/
