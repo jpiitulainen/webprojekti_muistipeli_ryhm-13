@@ -106,3 +106,19 @@ deck.forEach(card => {
 });
 
 });
+
+/*
+Lähteet: W3Schools JavaScript Timing Events
+https://www.w3schools.com/js/js_arrays.asp
+
+JavaScript.info - setTimeout and setInterval
+https://javascript.info/settimeout-setinterval
+
+W3Schools - JavaScript Array Sort
+https://www.w3schools.com/js/js_array_sort.asp
+
+JavaScript.info - DOMContentLoaded
+https://javascript.info/onload-ondomcontentloaded
+
+OpenAI ChatGPT (GPT-5) - Tekoälyä käytetty koodin korjaamiseen ja selittämiseen.
+*/
