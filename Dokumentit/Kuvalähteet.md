@@ -37,3 +37,5 @@ Vimpa: Tekijä: Krüger / M. E. Bloch Lisenssi: Public Domain Lähde: Wikimedia 
 Järvimaisema: Tekijä: jooseft0 Lisenssi: Pixabayn sisältölisenssi Lähde: Pixabay
 
 Pelikortin ulkoasu: Luoto tekoälyllä - OpenAI ChatGPT (GPT-5) 
+
+Etusivun kalakuva: Tekoälyn generoima (OpenAI ChatGPT /  DALL·E)
