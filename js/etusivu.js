@@ -30,3 +30,4 @@ JavaScript.info - setTimeout and setInterval
 https://javascript.info/settimeout-setinterval
 
 OpenAI - ChatGPT (GPT-5) Tekoälyä käytetty korjaamaan koodia ja selittämään sitä.
+*/
