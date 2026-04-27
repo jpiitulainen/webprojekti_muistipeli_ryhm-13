@@ -33,3 +33,7 @@ Taimen: Tekijä: Duane Raver / USFWS Lisenssi: Public Domain Lähde: Wikimedia C
 Turska: Tekijä: H. Gervais & R. Boulart Lisenssi: Public Domain Lähde: Wikimedia Commons
 
 Vimpa: Tekijä: Krüger / M. E. Bloch Lisenssi: Public Domain Lähde: Wikimedia Commons
+
+Järvimaisema: Tekijä: jooseft0 Lisenssi: Pixabayn sisältölisenssi Lähde: Pixabay
+
+Pelikortin ulkoasu: Luoto tekoälyllä - OpenAI ChatGPT (GPT-5) 
