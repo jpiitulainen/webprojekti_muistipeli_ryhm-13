@@ -4,24 +4,24 @@ const game = document.getElementById("game");
 const nameBox = document.getElementById("fish-name");
 
 const fish = [
-  { name: "siika", image: "images/siika.webp" },
-  { name: "pasuri", image: "images/Pasuri.png" },
-  { name: "vimpa", image: "images/Vimpa.png" },
-  { name: "sulkava", image: "images/Sulkava.png" },
-  { name: "sorva", image: "images/Sorva.png" },
-  { name: "kiiski", image: "images/Kiiski.jpg" },
-  { name: "salakka", image: "images/Salakka.png" },
-  { name: "säyne", image: "images/sayne.jpg" },
-  { name: "made", image: "images/Made.png" },
-  { name: "taimen", image: "images/Taimen.jpg" },
-  { name: "nieriä", image: "images/Nieriä.jpg" },
-  { name: "harjus", image: "images/Harjus.jpg" },
-  { name: "ankerias", image: "images/Ankerias.jpg" },
-  { name: "turska", image: "images/Turska.jpg" },
-  { name: "särki", image: "images/Särki.png" },
-  { name: "kirjolohi", image: "images/Kirjolohi.jpg" },
-  { name: "muikku", image: "images/Muikku.jpg" },
-  { name: "ahven", image: "images/Ahven.png" }
+  { name: "siika", image: "images/Siika1.jpg" },
+  { name: "pasuri", image: "images/pasuri1.png" },
+  { name: "vimpa", image: "images/Vimpa1.jpg" },
+  { name: "sulkava", image: "images/Sulkava1.jpg" },
+  { name: "sorva", image: "images/Sorva1.jpg" },
+  { name: "kiiski", image: "images/Kiiski1.jpg" },
+  { name: "salakka", image: "images/Salakka1.jpg" },
+  { name: "säyne", image: "images/Sayne1.jpg" },
+  { name: "made", image: "images/made1.jpeg" },
+  { name: "taimen", image: "images/taimen1.jpg" },
+  { name: "nieriä", image: "images/Nieriä1.jpg" },
+  { name: "harjus", image: "images/harjus1.jpg" },
+  { name: "ankerias", image: "images/Ankerias1.jpg" },
+  { name: "turska", image: "images/turska1.jpg" },
+  { name: "särki", image: "images/Särki1.jpg" },
+  { name: "kirjolohi", image: "images/kirjolohi1.jpg" },
+  { name: "muikku", image: "images/Muikku1.jpg" },
+  { name: "ahven", image: "images/Ahven1.jpg" }
 ];
 
 let deck = [...fish, ...fish].map((card, index) => ({
